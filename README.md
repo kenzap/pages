@@ -1,23 +1,21 @@
-# E-commerce
+# Pages
 
-Create and organize products used in e-commerce, orders and checkout.
+Create sophisticated cloud-based applications with the help of Kenzap Pages.
 
-![E-commerce](https://cdn.kenzap.com/github/img/extension-ecommerce.png)
+![Pages](https://cdn.kenzap.com/github/img/pages-1.png)
 
 <b>With solution one can:</b>
 
 <ul>
-<li>Register ecommerce products</li>
-<li>Manage inventory</li>
-<li>Upload product images</li>
-<li>Set up price variations</li>
-<li>Share products</li>
-<li>Use open API to work with products</li>
-<li>Scale and localize solution</li>
-<li>Set custom notifications</li>
-<li>Collaborate</li>
-<li>View orders</li>
+    <li>Build simple websites</li>
+    <li>Publish pages</li>
+    <li>List information linked to all Cloud Products, such as MyTicket, E-Commerce, etc</li>
+    <li>Generate open-source HTML code</li>
+    <li>Build and upload your own layouts</li>
+    <li>Customise your online presence</li>
 </ul>
+
+Check in live at https://pages.kenzap.cloud/
 
 ## Setup
 
