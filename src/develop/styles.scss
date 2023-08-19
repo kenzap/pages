@@ -1,0 +1,75 @@
+@import "../_/_global.scss";
+  
+
+/* product list */
+.table-p-list thead tr th:nth-child(1){width:44px;} 
+.table-p-list .search-cont{display:none;}
+.table-p-list .bi-search{cursor:pointer;}
+.timgc{overflow:hidden; white-space: nowrap;overflow: hidden;text-overflow: ellipsis; min-width:42px;}
+.timgc img{position:relative;}
+
+.table-responsive .dropdown,
+.table-responsive .btn-group,
+.table-responsive .btn-group-vertical {
+    position: static;
+}
+
+.ace_editor {
+    margin: auto;
+    height: 300px;
+    width: 100%;
+}
+
+.ace_editor, .ace_editor *{
+    font-family: "Monaco", "Menlo", "Ubuntu Mono", "Droid Sans Mono", "Consolas", monospace !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0 !important;
+}
+
+.settings .image-cont {
+    cursor: pointer;
+    max-width: 600px;
+}
+
+.settings .image-cont img {
+    object-fit: cover;
+    max-width: 600px;
+    width: 100%;
+}
+
+.settings .image-upload {
+    display: none;
+}
+ 
+@keyframes progress-bar-stripes {
+    from { background-position: 8px 0; }
+    to { background-position: 0 0; }
+}
+
+.settings .progress-bar-animated {
+    animation: progress-bar-stripes 1s linear infinite;
+}
+
+.settings .progress-bar-striped {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem;
+}
+
+.settings .progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #007bff;
+    transition: width 0.6s ease;
+    height: 8px;
+}
+
+.settings .progress{
+    width: 100%;
+    display: none;
+    margin-top: 4px;
+}

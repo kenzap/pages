@@ -1,0 +1,34 @@
+#contents {
+  margin-top: 82px;
+}
+
+footer {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.po {
+  cursor: pointer;
+}
+
+.loader {
+  z-index: 10000;
+}
+
+@media (max-width: 500px) {
+  .toast {
+    width: auto;
+  }
+}
+.timgc {
+  max-width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.timgc img {
+  position: relative;
+  min-height: 28px;
+}
