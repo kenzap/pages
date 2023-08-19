@@ -15,7 +15,7 @@ Create sophisticated cloud-based applications with the help of Kenzap Pages.
     <li>Customise your online presence</li>
 </ul>
 
-Check in live at https://pages.kenzap.cloud/
+Check live demo at https://pages.kenzap.cloud/
 
 ## Setup
 
