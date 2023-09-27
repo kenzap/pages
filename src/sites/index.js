@@ -385,9 +385,9 @@ class Sites {
                 if(data.domain.indexOf('/')!=-1){ document.querySelector('#p-domain').classList.add('is-invalid'); document.querySelector('#domainFeedback').innerHTML = __html('Remove http:// or https:// or other special characters.'); return; }
 
                 // validate with subdomains
-                let reg = /^[a-zA-Z0-9][a-zA-Z0-9-_]{0,61}[a-zA-Z0-9]{0,1}\.([a-zA-Z]{1,11}|[a-zA-Z0-9-]{1,30}\.[a-zA-Z]{2,12})$/;
+                let reg = /^[a-zA-Z0-9][a-zA-Z0-9-_]{0,61}\.?[a-zA-Z0-9][a-zA-Z0-9-_]{0,61}\.?[a-zA-Z0-9]{0,1}\.?([a-zA-Z]{1,11}|[a-zA-Z0-9-]{1,30}\.[a-zA-Z]{2,12})$/;
                 if(!reg.test(data.domain)){ document.querySelector('#p-domain').classList.add('is-invalid'); document.querySelector('#domainFeedback').innerHTML = __html('Domain name is invalid.'); return; }
-
+ 
                 showLoader();
 
                 // update data
@@ -564,8 +564,9 @@ class Sites {
             if(data.domain.indexOf('/')!=-1){ document.querySelector('#p-domain').classList.add('is-invalid'); document.querySelector('#domainFeedback').innerHTML = __html('Remove http:// or https:// or other special characters.'); return; }
 
             // validate with subdomains
-            let reg = /^[a-zA-Z0-9][a-zA-Z0-9-_]{0,61}[a-zA-Z0-9]{0,1}\.([a-zA-Z]{1,11}|[a-zA-Z0-9-]{1,30}\.[a-zA-Z]{2,12})$/;
+            let reg = /^[a-zA-Z0-9][a-zA-Z0-9-_]{0,61}\.?[a-zA-Z0-9][a-zA-Z0-9-_]{0,61}\.?[a-zA-Z0-9]{0,1}\.?([a-zA-Z]{1,11}|[a-zA-Z0-9-]{1,30}\.[a-zA-Z]{2,12})$/;
             if(!reg.test(data.domain)){ document.querySelector('#p-domain').classList.add('is-invalid'); document.querySelector('#domainFeedback').innerHTML = __html('Domain name is invalid.'); return; }
+            // tickets2.kenzap.in.rs
 
             showLoader();
 

@@ -893,7 +893,7 @@ export const simpleTags = (element) => {
 export const initFooter = (_this) => {
         
     // Created by %1$Kenzap%2$. ❤️ 
-    let left = __html('Pages 1.0.5 by %1$Kenzap%2$. ❤️ Licensed %3$GPLv3%4$.', '<a class="text-muted" href="https://kenzap.com/" target="_blank">', '</a>', '<a class="text-muted" href="https://github.com/kenzap/pages" target="_blank">', '</a>')  
+    let left = __html('Pages 1.0.6 by %1$Kenzap%2$. ❤️ Licensed %3$GPLv3%4$.', '<a class="text-muted" href="https://kenzap.com/" target="_blank">', '</a>', '<a class="text-muted" href="https://github.com/kenzap/pages" target="_blank">', '</a>')  
     let right = __html('%1$Developer mode%2$', `<a class="text-muted" href="${ link('/develop/') }" target="_self">`, `</a>`)  ;
     document.querySelector("footer .row").innerHTML = `
     <div class="d-sm-flex justify-content-center justify-content-sm-between">

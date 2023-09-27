@@ -349,7 +349,7 @@ class Develop {
             showLoader();
 
             // remove
-            fetch(this.getSiteAPI() + 'v1/?' + new URLSearchParams({
+            fetch(getSiteAPI() + 'v1/?' + new URLSearchParams({
                 cmd:        'remove_layout',
                 token:      getCookie('kenzap_token'),
                 id:         e.currentTarget.dataset.id 
@@ -476,7 +476,7 @@ class Develop {
             showLoader();
 
             // create
-            fetch(this.getSiteAPI() + 'v1/?' + new URLSearchParams({
+            fetch(getSiteAPI() + 'v1/?' + new URLSearchParams({
                 cmd:        'create_layout',
                 token:      getCookie('kenzap_token'),
                 tname:      tnameF,

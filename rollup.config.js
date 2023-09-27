@@ -60,10 +60,10 @@ const scriptInputs = scriptFiles.reduce((files, input) => {
 const scriptPaths = Object.keys(scriptInputs)
 const scriptOutputs = scriptPaths.reduce((files, file) => {
 	const inputPath = scriptInputs[file]
-	const parts = inputPath.split("/")
+	const slash = inputPath.indexOf('/') !=-1 ? '/':'\\';
+	const parts = inputPath.split(slash)
 	const pathIndex = parts.indexOf("index.js") - 1
-
-	const outputPath = parts.slice(pathIndex).join("/")
+	const outputPath = parts.slice(pathIndex).join(slash)
 
 	workingFolders.push(parts[parts.length-2]);
 	return { [file]: absolutePath(targetFolder + outputPath), ...files }
@@ -158,7 +158,7 @@ const bundles = scriptPaths.map((key) => {
 		plugins.push(
 			livereload({
 				watch: [ 
-				path.resolve(__dirname, 'public'),
+					path.resolve(__dirname, 'public'),
 				],
 				delay: 500,
 				exts: [ 'html', 'js', 'scss', 'sass', 'css' ]
